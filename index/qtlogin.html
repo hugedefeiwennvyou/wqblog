@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="{CSS_URL}/qtlogin.css">
+<script src="{JS_URL}/jquery-3.2.1.js"></script>
+<script src="{JS_URL}/jquery.validate.js"></script>
+<script src="{JS_URL}/qtlogin.js"></script>
+<script src="{JS_URL}/login.js"></script>
+<body>
+<div class="head">
+    <div class="logo">
+        <img src="{IMG_URL}/logo.png" alt="">
+    </div>
+    <div class="logo-right">畅聊你的故事 </div>
+</div>
+<div class="main">
+    <div class="login">
+        <h3>登▪录</h3>
+        <form action="index.php?m=index&f=login&a=check" method="post">
+            <div class="user">
+                <div class="userimg iconfont">&#xe601;</div>
+                <input type="text" name="user" placeholder="请输入用户名" autocomplete="off">
+            </div>
+            <div class="passwd">
+                <div class="passwdimg iconfont">&#xe70a;</div>
+                <input type="password" name="passwd" placeholder="请输入密码">
+            </div>
+            <div class="phone">
+                <div class="phoneimg iconfont">&#xe624;</div>
+                <input type="text" name="code" placeholder="请输入验证码" autocomplete="off">
+                <div class="check">
+                    <img class="one" src="index.php?m=admin&f=admin&a=logincode" onclick="this.src='index.php?m=admin&f=admin&a=logincode'">
+                </div>
+            </div>
+            <input type="submit" class="dl" value="登录">
+        </form>
+        <div class="back"><a href="index.php?m=index&f=index">返回首页</a></div>
+        <div class="regs"><a href="index.php?m=index&f=regs">免费注册</a></div>
+    </div>
+</div>
+</body>
+</html>
+
+

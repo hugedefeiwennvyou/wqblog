@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分类页</title>
+    <link rel="stylesheet" href="{CSS_URL}/category.css">
+    <script src="{JS_URL}/jquery-3.2.1.js"></script>
+    <script src="{JS_URL}/category.js"></script>
+</head>
+<body>
+{if $uname}
+<!--第二个header-->
+<header>
+    <main class="headers">
+        <div class="logo">
+            <div class="logo-img">
+                <img src="{IMG_URL}/logo.png" alt="">
+            </div>
+            <div class="logo-word">畅聊</div>
+        </div>
+        <div class="search">
+            <input type="text" name="search" class="search-k" placeholder="搜索">
+            <div class="fdj">
+                <a href=""><img src="{IMG_URL}/ss.png" alt=""></a>
+            </div>
+        </div>
+        <ul class="login">
+            <li><a href="index.php?m=index&f=index" style="color: #ff9700">
+                <img src="{IMG_URL}/a.png" alt="">
+            </a></li>
+            <li><a href="index.php?m=index&f=index" style="color: #ff9700">首页</a></li>
+            <li><a href="index.php?m=index&f=index&a=car">购物车</a></li>
+            <li class="personal">
+                <a href="">个人中心</a>
+                <div class="sanjiao"></div>
+                <ul class="check">
+                    <li><a href="index.php?m=index&f=index&a=personal">个人主页</a></li>
+                    <li><a href="index.php?m=index&f=index&a=collect">我的收藏</a></li>
+                    <li><a href="index.php?m=index&f=index&a=attention">我的关注</a></li>
+                    <li><a href="index.php?m=index&f=index&a=money">我的钱包</a></li>
+                    <li><a href="index.php?m=index&f=index&a=set">设置</a></li>
+                </ul>
+            </li>
+            <li><a href="index.php?m=index&f=index&a=article">写文章</a></li>
+            <li><a href="index.php?m=index&f=login&a=exits">退出</a></li>
+        </ul>
+    </main>
+</header>
+<!--解决fixed布局的header1-->
+<div class="header1"></div>
+{else}
+<!--第一个header-->
+<header>
+    <main class="header">
+        <div class="logo">
+            <div class="logo-img">
+                <img src="{IMG_URL}/logo.png" alt="">
+            </div>
+            <div class="logo-word">畅聊</div>
+        </div>
+        <div class="search">
+            <input type="text" name="search" class="search-k" placeholder="搜索">
+            <div class="fdj">
+                <a href=""><img src="{IMG_URL}/ss.png" alt=""></a>
+            </div>
+        </div>
+        <ul class="login">
+            <li><a href="index.php?m=index&f=index" style="color: #ff9700">首页</a></li>
+            <li><a href="index.php?m=index&f=login&a=init">登录</a></li>
+            <li><a href="index.php?m=index&f=regs&a=init">注册</a></li>
+        </ul>
+    </main>
+</header>
+<!--解决fixed布局的header1-->
+<div class="header1"></div>
+{/if}
+<div class="big-box">
+    <!--左边-->
+    <div class="c-left">
+        <div class="left-top">
+            <div class="img-box">
+                <a href="">
+                    <img src="{IMG_URL}/a.png" alt="">
+                </a>
+            </div>
+            <div class="word-box">
+                <a href="">散文</a>
+                <p>收录了300篇文章 100人关注</p>
+            </div>
+            <div class="shoucang"><a href="javascript:;">收藏</a></div>
+            <div class="guanzhu"><a href="javascript:;">+ 关注</a></div>
+        </div>
+        <div class="left-middle">
+            <div><a href="javascript:;">最新评论</a></div>
+            <div><a href="javascript:;">最新收录</a></div>
+            <div><a href="javascript:;">热门</a></div>
+        </div>
+        <div class="left-bottom">
+            <ul class="content">
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">韩大爷的杂货铺</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">你有最美的年纪，别辜负了最好的自己</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">韩大爷的杂货铺</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">你有最美的年纪，别辜负了最好的自己</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">韩大爷的杂货铺</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">你有最美的年纪，别辜负了最好的自己</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">韩大爷的杂货铺</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">你有最美的年纪，别辜负了最好的自己</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">韩大爷的杂货铺</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">你有最美的年纪，别辜负了最好的自己</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">韩大爷的杂货铺</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">你有最美的年纪，别辜负了最好的自己</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+            </ul>
+            <ul class="content">
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">空5</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">风雨砥砺,岁月如歌,心安即是归处。</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">韩大爷的杂货铺</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">你有最美的年纪，别辜负了最好的自己</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">韩大爷的杂货铺</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">你有最美的年纪，别辜负了最好的自己</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">韩大爷的杂货铺</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">你有最美的年纪，别辜负了最好的自己</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">韩大爷的杂货铺</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">你有最美的年纪，别辜负了最好的自己</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">韩大爷的杂货铺</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">你有最美的年纪，别辜负了最好的自己</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+            </ul>
+            <ul class="content">
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">寒烟衰草</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">请允许我，短暂地跟你告别</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">韩大爷的杂货铺</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">你有最美的年纪，别辜负了最好的自己</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">韩大爷的杂货铺</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">你有最美的年纪，别辜负了最好的自己</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">韩大爷的杂货铺</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">你有最美的年纪，别辜负了最好的自己</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">韩大爷的杂货铺</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">你有最美的年纪，别辜负了最好的自己</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">韩大爷的杂货铺</a></div>
+                        <div class="li-data">4小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">你有最美的年纪，别辜负了最好的自己</a></div>
+                    <div class="li-con"><a href="">手里拉着无数条连着线的风筝，只要风在，风筝就会一直飞上天。﻿ ﻿如若放手，再坚强的风筝也会失去方向感，失去自我，然后从天空坠落。﻿ ﻿当命运需要我们逆风飞翔的时候，请不要随风...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            150
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            33
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            35
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                    <div class="con-img">
+                        <img src="{IMG_URL}/timg.jpg" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--右边-->
+    <div class="c-right">
+        <p class="title">专题公告</p>
+        <p>寄君一曲,不问曲终人聚散</p>
+        <p>散文专题投稿须知：<br>
+            1.字数适量。散文虽形式灵活篇幅短小，但字数太少者请改投诗专题。<br>
+            2.排版简洁为好。请用段落间空行取代段首空两格。<br>
+            3.语言优美形散神凝为佳。请尽量保证文章质量，首先得是散文吧。<br>
+            4.谢绝密集投稿。为了读者和您有更好的专题体验，勿频繁投稿。<br>
+            5.禁投广告。请不要在文章任何位置(尤其是图片)显示公众号、电话、微博、博客、QQ、二 维码等信息。<br>
+            6.鄙视抄袭。做复制粘贴的搬运工是非常low的表现，请你尊重原创和自己。<br>
+            最后，无视最后两条者，轻者秒拒，重则拉入黑名单，稿件再不录入。
+        </p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{CSS_URL}/index.css">
+    <script src="{JS_URL}/jquery-3.2.1.js"></script>
+    <script src="{JS_URL}/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+{if $uname}
+<!--第二个header-->
+<header>
+    <main class="headers">
+        <div class="logo">
+            <div class="logo-img">
+                <img src="{IMG_URL}/logo.png" alt="">
+            </div>
+            <div class="logo-word">畅聊</div>
+        </div>
+        <div class="search">
+            <input type="text" name="search" class="search-k" placeholder="搜索">
+            <div class="fdj">
+                <a href=""><img src="{IMG_URL}/ss.png" alt=""></a>
+            </div>
+        </div>
+        <ul class="login">
+            <li><a href="index.php?m=index&f=index&a=set" style="color: #ff9700">
+                <img src="{IMG_URL}/sc (1).png" alt="">
+            </a></li>
+            <li><a href="index.php?m=index&f=index" style="color: #ff9700">首页</a></li>
+            <li><a href="index.php?m=index&f=index&a=car">购物车</a></li>
+            <li class="personal">
+                <a href="">个人中心</a>
+                <div class="sanjiao"></div>
+                <ul class="check">
+                    <li><a href="index.php?m=index&f=index&a=personal">个人主页</a></li>
+                    <li><a href="index.php?m=index&f=index&a=collect">我的收藏</a></li>
+                    <li><a href="index.php?m=index&f=index&a=attention">我的关注</a></li>
+                    <li><a href="index.php?m=index&f=index&a=money">我的钱包</a></li>
+                    <li><a href="index.php?m=index&f=index&a=set">设置</a></li>
+                </ul>
+            </li>
+            <li><a href="index.php?m=index&f=index&a=article">写文章</a></li>
+            <li><a href="index.php?m=index&f=login&a=exits">退出</a></li>
+        </ul>
+    </main>
+</header>
+<!--解决fixed布局的header1-->
+<div class="header1"></div>
+{else}
+<!--第一个header-->
+<header>
+    <main class="header">
+        <div class="logo">
+            <div class="logo-img">
+                <img src="{IMG_URL}/logo.png" alt="">
+            </div>
+            <div class="logo-word">畅聊</div>
+        </div>
+        <div class="search">
+            <input type="text" name="search" class="search-k" placeholder="搜索">
+            <div class="fdj">
+                <a href=""><img src="{IMG_URL}/ss.png" alt=""></a>
+            </div>
+        </div>
+        <ul class="login">
+            <li><a href="index.php?m=index&f=index" style="color: #ff9700">首页</a></li>
+            <li><a href="index.php?m=index&f=login&a=init">登录</a></li>
+            <li><a href="index.php?m=index&f=regs&a=init">注册</a></li>
+        </ul>
+    </main>
+</header>
+<!--解决fixed布局的header1-->
+<div class="header1"></div>
+{/if}
+<!--banner-->
+<div class="banner">
+    <img src="{IMG_URL}/bannerjpg.jpg" alt="" style="opacity: 1;">
+    <img src="{IMG_URL}/shu.jpg" alt="">
+    <img src="{IMG_URL}/shu1.jpg" alt="">
+    <span class="one">生命里面很多事情，沉重婉转至不可说</span>
+    <span class="two">这一次，我把心事轻叩，与过往道声临别的问候</span>
+    <span class="three">来到畅聊，将你的故事说与我听!</span>
+</div>
+<main class="zhuti">
+    <div class="mleft">
+        <div class="mtop">
+            <div class="fenlei">
+                <a href="index.php?m=index&f=index&a=category">
+                    <div class="fenlei-img">
+                        <img src="{IMG_URL}/a.png" alt="">
+                    </div>
+                    <div class="fenlei-word">散文</div>
+                </a>
+            </div>
+            <div class="fenlei">
+                <a href="">
+                    <div class="fenlei-img">
+                        <img src="{IMG_URL}/b.png" alt="">
+                    </div>
+                    <div class="fenlei-word">谈谈情,说说爱</div>
+                </a>
+            </div>
+            <div class="fenlei">
+                <a href="">
+                    <div class="fenlei-img">
+                        <img src="{IMG_URL}/c.jpg" alt="">
+                    </div>
+                    <div class="fenlei-word">手绘</div>
+                </a>
+            </div>
+            <div class="fenlei">
+                <a href="">
+                    <div class="fenlei-img">
+                        <img src="{IMG_URL}/d.png" alt="">
+                    </div>
+                    <div class="fenlei-word">生活家</div>
+                </a>
+            </div>
+            <div class="fenlei">
+                <a href="">
+                    <div class="fenlei-img">
+                        <img src="{IMG_URL}/e.jpg" alt="">
+                    </div>
+                    <div class="fenlei-word">我的故事</div>
+                </a>
+            </div>
+            <div class="fenlei">
+                <a href="">
+                    <div class="fenlei-img">
+                        <img src="{IMG_URL}/f.jpg" alt="">
+                    </div>
+                    <div class="fenlei-word">乡土情结</div>
+                </a>
+            </div>
+            <div class="fenlei">
+                <a href="">
+                    <div class="fenlei-img">
+                        <img src="{IMG_URL}/g.jpeg" alt="">
+                    </div>
+                    <div class="fenlei-word">连载小说</div>
+                </a>
+            </div>
+            <div class="fenlei">
+                <a href="">
+                    <div class="fenlei-img">
+                        <img src="{IMG_URL}/h.jpg" alt="">
+                    </div>
+                    <div class="fenlei-word">吐露心事</div>
+                </a>
+            </div>
+        </div>
+        <div class="mbottom">
+            <div class="title">文章<span>推荐</span></div><hr>
+            <ul class="some">
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">爱里的心</a></div>
+                        <div class="li-data">6小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="index.php?m=index&f=lists&a=init">程序员请放下你的技术,与你的同伴一起进步</a></div>
+                    <div class="li-con"><a href="">先说一些题外话。 非常感谢简书版权中心的武老师，以及一路陪我走到现在的粉丝朋友们。 没错，我成为签约作者了... 坦白讲，当我写下这句话的时候，内心非常平静。 真正感到意外和...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">上班那点事</a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            6700
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(4).png" alt="">
+                            800
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            120
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            120
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                </li>
+                <div class="con-img">
+                    <img src="{IMG_URL}/h.jpg" alt="">
+                </div>
+            </ul>
+            <ul class="some">
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">爱里的心</a></div>
+                        <div class="li-data">6小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="">程序员请放下你的技术,与你的同伴一起进步</a></div>
+                    <div class="li-con"><a href="">先说一些题外话。 非常感谢简书版权中心的武老师，以及一路陪我走到现在的粉丝朋友们。 没错，我成为签约作者了... 坦白讲，当我写下这句话的时候，内心非常平静。 真正感到意外和...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">上班那点事</a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            6700
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(4).png" alt="">
+                            800
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            120
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            120
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                </li>
+                <div class="con-img">
+                    <img src="{IMG_URL}/h.jpg" alt="">
+                </div>
+            </ul>
+            <ul class="some">
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">爱里的心</a></div>
+                        <div class="li-data">6小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="">程序员请放下你的技术,与你的同伴一起进步</a></div>
+                    <div class="li-con"><a href="">先说一些题外话。 非常感谢简书版权中心的武老师，以及一路陪我走到现在的粉丝朋友们。 没错，我成为签约作者了... 坦白讲，当我写下这句话的时候，内心非常平静。 真正感到意外和...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">上班那点事</a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            6700
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(4).png" alt="">
+                            800
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            120
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            120
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                </li>
+                <div class="con-img">
+                    <img src="{IMG_URL}/h.jpg" alt="">
+                </div>
+            </ul>
+            <ul class="some">
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">爱里的心</a></div>
+                        <div class="li-data">6小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="">程序员请放下你的技术,与你的同伴一起进步</a></div>
+                    <div class="li-con"><a href="">先说一些题外话。 非常感谢简书版权中心的武老师，以及一路陪我走到现在的粉丝朋友们。 没错，我成为签约作者了... 坦白讲，当我写下这句话的时候，内心非常平静。 真正感到意外和...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">上班那点事</a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            6700
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(4).png" alt="">
+                            800
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            120
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            120
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                </li>
+                <div class="con-img">
+                    <img src="{IMG_URL}/h.jpg" alt="">
+                </div>
+            </ul>
+            <ul class="some">
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">爱里的心</a></div>
+                        <div class="li-data">6小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="">程序员请放下你的技术,与你的同伴一起进步</a></div>
+                    <div class="li-con"><a href="">先说一些题外话。 非常感谢简书版权中心的武老师，以及一路陪我走到现在的粉丝朋友们。 没错，我成为签约作者了... 坦白讲，当我写下这句话的时候，内心非常平静。 真正感到意外和...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">上班那点事</a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            6700
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(4).png" alt="">
+                            800
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            120
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            120
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                </li>
+                <div class="con-img">
+                    <img src="{IMG_URL}/h.jpg" alt="">
+                </div>
+            </ul>
+            <ul class="some">
+                <li>
+                    <div class="li-top">
+                        <div class="li-img">
+                            <a href="">
+                                <img src="{IMG_URL}/d.png" alt="">
+                            </a>
+                        </div>
+                        <div class="li-word"><a href="">爱里的心</a></div>
+                        <div class="li-data">6小时前</div>
+                    </div>
+                    <div class="li-stitle"><a href="">程序员请放下你的技术,与你的同伴一起进步</a></div>
+                    <div class="li-con"><a href="">先说一些题外话。 非常感谢简书版权中心的武老师，以及一路陪我走到现在的粉丝朋友们。 没错，我成为签约作者了... 坦白讲，当我写下这句话的时候，内心非常平静。 真正感到意外和...</a></div>
+                    <ul class="li-bottom">
+                        <li><a href="">上班那点事</a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(3).png" alt="">
+                            6700
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(4).png" alt="">
+                            800
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(5).png" alt="">
+                            120
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(1).png" alt="">
+                            120
+                        </a></li>
+                        <li><a href="">
+                            <img src="{IMG_URL}/sc%20(2).png" alt="">
+                            2
+                        </a></li>
+                    </ul>
+                </li>
+                <div class="con-img">
+                    <img src="{IMG_URL}/h.jpg" alt="">
+                </div>
+            </ul>
+        </div>
+
+    </div>
+    <div class="mright">
+        <div class="news">
+            <h3>
+                最新<span>文章</span>
+            </h3>
+            <ul class="rank">
+                <li><a href="">Column 三栏布局 个人网站模板</a></li>
+                <li><a href="">with love for you 个人网站模板</a></li>
+                <li><a href="">免费收录网站搜索引擎登录口大全</a></li>
+                <li><a href="">做网站到底需要什么?</a></li>
+                <li><a href="">企业做网站具体流程步骤</a></li>
+                <li><a href="">建站流程篇――教你如何快速学会做网站</a></li>
+                <li><a href="">box-shadow 阴影右下脚折边效果</a></li>
+                <li><a href="">打雷时室内、户外应该需要注意什么</a></li>
+            </ul>
+            <h3>
+                点击<span>排行</span>
+            </h3>
+            <ul class="rank">
+                <li><a href="">Column 三栏布局 个人网站模板</a></li>
+                <li><a href="">with love for you 个人网站模板</a></li>
+                <li><a href="">免费收录网站搜索引擎登录口大全</a></li>
+                <li><a href="">做网站到底需要什么?</a></li>
+                <li><a href="">企业做网站具体流程步骤</a></li>
+            </ul>
+            <h3>
+                点击<span>分享</span>
+            </h3>
+            <ul class="fx">
+                <li><img src="{IMG_URL}/qq.png" alt=""></li>
+                <li><img src="{IMG_URL}/kj.png" alt=""></li>
+                <li><img src="{IMG_URL}/wx.png" alt=""></li>
+                <li><img src="{IMG_URL}/pyq.png" alt=""></li>
+                <li><img src="{IMG_URL}/wb.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</main>
+</body>
+</html>

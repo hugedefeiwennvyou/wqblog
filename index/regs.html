@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="{CSS_URL}/regs.css">
+<script src="{JS_URL}/jquery-3.2.1.js"></script>
+<script src="{JS_URL}/jquery.validate.js"></script>
+<script src="{JS_URL}/qtlogin.js"></script>
+<script src="{JS_URL}/login.js"></script>
+<body>
+<div class="main">
+    <div class="login">
+        <h3>免费▪注册</h3>
+        <form action="index.php?m=index&f=regs&a=insert" method="post">
+            <div class="user">
+                <div class="userimg iconfont">&#xe601;</div>
+                <input type="text" name="user" placeholder="请输入用户名" autocomplete="off">
+            </div>
+            <div class="passwd">
+                <div class="passwdimg iconfont">&#xe70a;</div>
+                <input type="password" name="passwd" placeholder="请输入密码" id="passwd">
+            </div>
+            <div class="passwd">
+                <div class="passwdimg iconfont">&#xe70a;</div>
+                <input type="password" name="passwd1" placeholder="请确认密码">
+            </div>
+            <div class="phone">
+                <div class="phoneimg iconfont">&#xe600;</div>
+                <input type="text" name="phone"placeholder="请输入手机号"autocomplete="off">
+                <a href="jsvascript:;" class="send">发送验证码</a>
+            </div>
+            <div class="phone">
+                <div class="phoneimg iconfont">&#xe638;</div>
+                <input type="text" name="phonecode" placeholder="请输入手机验证码" autocomplete="off">
+            </div>
+            <div class="phone">
+                <div class="phoneimg iconfont">&#xe624;</div>
+                <input type="text" name="code" placeholder="请输入验证码" autocomplete="off">
+                <div class="check">
+                    <img class="one" src="index.php?m=admin&f=admin&a=logincode" onclick="this.src='index.php?m=admin&f=admin&a=logincode'">
+                </div>
+            </div>
+            <input type="submit" class="dl" value="注册">
+        </form>
+        <div class="back"><a href="index.php?m=index&f=index">返回首页</a></div>
+        <div class="regs"><a href="index.php?m=index&f=login">马上登录</a></div>
+    </div>
+</div>
+</body>
+</html>
+
